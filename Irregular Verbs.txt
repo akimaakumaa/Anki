@@ -1,0 +1,119 @@
+FRONT:
+
+How do we usually ___ the ___ of onboarding a new employee?
+
+Who ___ the ___ of reorganizing the company files yesterday?
+
+Have you already ___ the ___ of applying for your travel visas?
+
+BACK: [type: verb+noun]
+begin the process = to start a series of actions needed to achieve a result
+Example 1: We need to begin the process of moving to a new office next month.
+Example 2: The hospital has begun the process of updating all patient records.
+Watch out: Don't confuse "process" with "procedure" (a set of strict, official rules).
+Synonyms: start the procedure, initiate the steps
+
+FRONT:
+
+Shall we ___ a ___ to the success of our new business partnership?
+
+Who ___ a ___ to Sarah at her farewell dinner?
+
+Have you ever ___ a ___ with champagne before?
+
+BACK: [type: verb+noun]
+drink a toast = to raise your glass and drink together in honor of someone or something
+Example 1: I'd like to drink a toast to our wonderful hosts tonight.
+Example 2: At the wedding gala, everyone drank a toast to the bride and groom.
+Watch out: We say "drink a toast TO someone", not "FOR someone".
+Synonyms: raise a glass, make a toast
+
+FRONT:
+
+Does the name "John Smith" ___ a ___ for you?
+
+What exact detail ___ a ___ when you listened to his story?
+
+Has his explanation ___ a ___ with anyone on the jury?
+
+BACK: [type: chunk]
+ring a bell = to sound familiar, even if you cannot remember all the details
+Example 1: That book title rings a bell, but I haven't actually read it.
+Example 2: I saw him in the meeting, but his voice didn't ring a bell.
+Watch out: This expression is frequently used in the negative (doesn't ring a bell).
+Synonyms: sound familiar, spark a memory
+
+FRONT:
+
+Do these wool sweaters normally ___ in the ___?
+
+Whose favorite t-shirt ___ in the ___ after yesterday's laundry?
+
+Has this type of delicate fabric ever ___ in the ___?
+
+BACK: [type: chunk]
+shrink in the wash = to become smaller after being cleaned with water and detergent
+Example 1: Be careful with that dress, or it might shrink in the wash.
+Example 2: My jeans shrank in the wash because the water was much too hot.
+Watch out: "Wash" here is used as a noun referring to the routine process of washing clothes.
+Synonyms: get smaller in the laundry, shrink during washing
+
+FRONT:
+
+Do you usually ___ ___ when your favorite track plays on the radio?
+
+Who ___ ___ the loudest at the live rock concert last weekend?
+
+Have you ever ___ ___ to a song without knowing the exact lyrics?
+
+BACK: [type: chunk]
+sing along = to join in singing a piece of music that is already playing
+Example 1: The band played their biggest hit and the whole crowd started to sing along.
+Example 2: I absolutely love to sing along to the radio while I'm driving to work.
+Watch out: We use the preposition "to" when mentioning the music (sing along to the song).
+Synonyms: join in, chant along
+
+FRONT:
+
+Does this heavy material normally ___ to the ___ of the tank?
+
+What heavy object ___ to the ___ of the lake during the storm?
+
+Have all the ancient coins already ___ to the ___ of the wishing well?
+
+BACK: [type: chunk]
+sink to the bottom = to drop downwards in water or liquid until reaching the lowest point
+Example 1: If you drop a solid stone in the lake, it will sink to the bottom immediately.
+Example 2: We watched the broken wooden chest sink to the bottom of the sea.
+Watch out: Use "to" for the destination (sink TO the bottom), not "at" or "in".
+Synonyms: go under, descend completely
+
+FRONT:
+
+Does any clear solution ___ to ___ right now?
+
+What specific memory ___ to ___ when you smelled that perfume?
+
+Has a better idea ___ to ___ since our last team meeting?
+
+BACK: [type: chunk]
+spring to mind = to suddenly or quickly appear in your thoughts
+Example 1: When I think of great comedy movies, several classics immediately spring to mind.
+Example 2: I asked for suggestions, but absolutely nothing sprang to mind right away.
+Watch out: We say "spring TO mind", not "in mind" or "to my mind" for this exact expression.
+Synonyms: come to mind, occur to someone
+
+FRONT:
+
+Is it dangerous to ___ against the ___ in this fast-moving river?
+
+Who bravely ___ against the ___ to rescue the stranded boat?
+
+Have you ever ___ against a strong ocean ___ during a severe storm?
+
+BACK: [type: chunk]
+swim against the current = to move through water in the opposite direction to its natural flow
+Example 1: The rescue team had to swim against the current to reach the isolated survivors.
+Example 2: It requires an enormous amount of physical strength to swim against the current in the ocean.
+Watch out: Don't confuse "current" (the directional flow of water) with "currently" (an adverb meaning right now).
+Synonyms: swim upstream, battle the tide

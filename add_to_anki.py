@@ -1,18 +1,30 @@
 import json
 import urllib.request
 import sys
+import os
+import glob
 
 ANKI_URL = "http://localhost:8765"
-DECK_NAME = "Oxford 3000"
 MODEL_NAME = "Basic"
+
+# Файлы, которые не являются колодами карточек
+SKIP_FILES = {"example_cards.txt"}
 
 
 def anki_request(action, **params):
     payload = json.dumps({"action": action, "version": 6, "params": params}).encode()
     req = urllib.request.Request(ANKI_URL, payload)
     response = json.load(urllib.request.urlopen(req))
-    if response.get("error"):
-        raise Exception(response["error"])
+    error = response.get("error")
+    if error:
+        # AnkiConnect иногда возвращает список ошибок для addNotes (дубликаты)
+        # В этом случае не падаем — возвращаем список None для каждой карточки
+        if isinstance(error, list):
+            result = response.get("result")
+            if result is None:
+                return [None] * len(params.get("notes", []))
+            return result
+        raise Exception(error)
     return response["result"]
 
 
@@ -55,14 +67,14 @@ def parse_cards(filepath):
     return cards
 
 
-def add_cards(cards):
+def add_cards(cards, deck_name):
     notes = [
         {
-            "deckName": DECK_NAME,
+            "deckName": deck_name,
             "modelName": MODEL_NAME,
             "fields": {"Front": front, "Back": back},
             "options": {"allowDuplicate": False},
-            "tags": ["oxford3000", "collocation"],
+            "tags": [deck_name.lower().replace(" ", "_")],
         }
         for front, back in cards
     ]
@@ -71,17 +83,47 @@ def add_cards(cards):
 
     added = sum(1 for r in results if r is not None)
     skipped = sum(1 for r in results if r is None)
-    print(f"Done: {added} added, {skipped} skipped (duplicates)")
+    print(f"  → {added} added, {skipped} skipped (duplicates)")
+    return added
+
+
+def process_file(filepath):
+    filename = os.path.basename(filepath)
+    deck_name = os.path.splitext(filename)[0].replace("_", " ").title()
+    print(f"\n[{filename}] → deck: \"{deck_name}\"")
+
+    cards = parse_cards(filepath)
+    print(f"  Found {len(cards)} cards")
+
+    if not cards:
+        print("  No cards found. Check the file format.")
+        return 0
+
+    return add_cards(cards, deck_name)
 
 
 if __name__ == "__main__":
-    filepath = sys.argv[1] if len(sys.argv) > 1 else "cards.txt"
-    print(f"Reading: {filepath}")
-    cards = parse_cards(filepath)
-    print(f"Found {len(cards)} cards")
+    script_dir = os.path.dirname(os.path.abspath(__file__))
 
-    if not cards:
-        print("No cards found. Check the file format.")
+    # Если передан конкретный файл — обработать только его
+    if len(sys.argv) > 1:
+        files = [sys.argv[1]]
+    else:
+        # Иначе — найти все .txt файлы в папке скрипта
+        all_txt = glob.glob(os.path.join(script_dir, "*.txt"))
+        files = [f for f in all_txt if os.path.basename(f) not in SKIP_FILES]
+
+    if not files:
+        print("No .txt files found.")
         sys.exit(1)
 
-    add_cards(cards)
+    print(f"Found {len(files)} file(s) to process:")
+    for f in files:
+        print(f"  - {os.path.basename(f)}")
+
+    total_added = 0
+    for filepath in files:
+        total_added += process_file(filepath)
+
+    print(f"\n{'='*40}")
+    print(f"Total added: {total_added} new cards")
