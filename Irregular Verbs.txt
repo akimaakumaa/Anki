@@ -1,119 +1,71 @@
 FRONT:
-
-How do we usually ___ the ___ of onboarding a new employee?
-
-Who ___ the ___ of reorganizing the company files yesterday?
-
-Have you already ___ the ___ of applying for your travel visas?
+1. You shouldn't ___ your ___ to study abroad; it's an incredible program.
+2. He completely ___ his ___ with the new client by arriving an hour late to the meeting.
+3. I feel like we've ___ our ___ at getting cheap concert tickets since they sell out so fast.
+Synonyms: miss an opportunity, waste a chance, mess up
 
 BACK: [type: verb+noun]
-begin the process = to start a series of actions needed to achieve a result
-Example 1: We need to begin the process of moving to a new office next month.
-Example 2: The hospital has begun the process of updating all patient records.
-Watch out: Don't confuse "process" with "procedure" (a set of strict, official rules).
-Synonyms: start the procedure, initiate the steps
+**blow a chance** = miss or waste a good opportunity by making a mistake
+Example 1: If you don't prepare for the interview, you will blow your chance.
+Example 2: They blew their chance of winning the championship in the final minute of the game.
+Watch out: Don't confuse this with "lose a chance"; "blow" implies that you personally made a mistake that caused the failure.
 
 FRONT:
-
-Shall we ___ a ___ to the success of our new business partnership?
-
-Who ___ a ___ to Sarah at her farewell dinner?
-
-Have you ever ___ a ___ with champagne before?
+1. Try to sneak in quietly; we don't want to ___ any ___ to ourselves.
+2. Her highly unusual outfit definitely ___ a lot of ___ at the formal conference.
+3. The recent public protests have ___ widespread ___ to the housing crisis.
+Synonyms: attract notice, catch the eye, turn heads
 
 BACK: [type: verb+noun]
-drink a toast = to raise your glass and drink together in honor of someone or something
-Example 1: I'd like to drink a toast to our wonderful hosts tonight.
-Example 2: At the wedding gala, everyone drank a toast to the bride and groom.
-Watch out: We say "drink a toast TO someone", not "FOR someone".
-Synonyms: raise a glass, make a toast
+**draw attention** = make people look at or notice someone or something
+Example 1: The loud argument in the restaurant drew everyone's attention.
+Example 2: I've highlighted this text in red to draw your attention to the most important rule.
+Watch out: We almost always use this with the preposition "to" when specifying the target: "draw attention TO something/someone."
 
 FRONT:
-
-Does the name "John Smith" ___ a ___ for you?
-
-What exact detail ___ a ___ when you listened to his story?
-
-Has his explanation ___ a ___ with anyone on the jury?
+1. I can't believe how fast the weekend ___ ___!
+2. The deadline is approaching so fast because the last few weeks have just ___ ___.
+3. Time really ___ ___ when you're busy working on an engaging project.
+Synonyms: pass quickly, go fast, slip away
 
 BACK: [type: chunk]
-ring a bell = to sound familiar, even if you cannot remember all the details
-Example 1: That book title rings a bell, but I haven't actually read it.
-Example 2: I saw him in the meeting, but his voice didn't ring a bell.
-Watch out: This expression is frequently used in the negative (doesn't ring a bell).
-Synonyms: sound familiar, spark a memory
+**fly by** = pass very quickly (almost always referring to time)
+Example 1: The summer holidays always fly by so fast when you are a kid.
+Example 2: We were having such a good conversation that the afternoon just flew by.
+Watch out: This is typically used with the phrase "time flies" or when talking about periods of time like days, weeks, or years.
 
 FRONT:
+1. It takes a lot of hard work and financial investment to ___ a successful ___.
+2. She ___ her small local ___ into a massive international tech company.
+3. My cousin is trying to ___ his online ___, but he's currently struggling to find enough customers.
+Synonyms: expand a company, build a business, scale up
 
-Do these wool sweaters normally ___ in the ___?
-
-Whose favorite t-shirt ___ in the ___ after yesterday's laundry?
-
-Has this type of delicate fabric ever ___ in the ___?
-
-BACK: [type: chunk]
-shrink in the wash = to become smaller after being cleaned with water and detergent
-Example 1: Be careful with that dress, or it might shrink in the wash.
-Example 2: My jeans shrank in the wash because the water was much too hot.
-Watch out: "Wash" here is used as a noun referring to the routine process of washing clothes.
-Synonyms: get smaller in the laundry, shrink during washing
+BACK: [type: verb+noun]
+**grow a business** = make a company bigger, more profitable, and successful
+Example 1: We are currently looking for new investors to help grow our business.
+Example 2: He wants to grow his business for five more years before he finally sells it.
+Watch out: "Business" is often an uncountable noun (e.g., "we do business together"), but in this collocation, it refers to a specific company, making it countable ("a business").
 
 FRONT:
-
-Do you usually ___ ___ when your favorite track plays on the radio?
-
-Who ___ ___ the loudest at the live rock concert last weekend?
-
-Have you ever ___ ___ to a song without knowing the exact lyrics?
+1. I need to ___ this speech by ___ for the big presentation tomorrow.
+2. She ___ the lyrics by ___ after listening to the pop song just twice.
+3. All the actors have ___ their lines by ___ since last week's rehearsal.
+Synonyms: have memorized, know word-for-word, remember perfectly
 
 BACK: [type: chunk]
-sing along = to join in singing a piece of music that is already playing
-Example 1: The band played their biggest hit and the whole crowd started to sing along.
-Example 2: I absolutely love to sing along to the radio while I'm driving to work.
-Watch out: We use the preposition "to" when mentioning the music (sing along to the song).
-Synonyms: join in, chant along
+**know by heart** = have something memorized perfectly so you don't need to read it
+Example 1: I've watched that movie so many times that I know the script by heart.
+Example 2: You don't need to know the entire employee manual by heart, just the basic safety rules.
+Watch out: This is often confused with "learn by heart". You first *learn* something by heart (the process), and then you *know* it by heart (the result).
 
 FRONT:
+1. We should ___ a huge ___ for his university graduation next month.
+2. The marketing company ___ a lavish ___ to celebrate their record profits this year.
+3. She has never ___ a ___ before, so she's worried that her guests won't have fun.
+Synonyms: host a party, organize a celebration, have a gathering
 
-Does this heavy material normally ___ to the ___ of the tank?
-
-What heavy object ___ to the ___ of the lake during the storm?
-
-Have all the ancient coins already ___ to the ___ of the wishing well?
-
-BACK: [type: chunk]
-sink to the bottom = to drop downwards in water or liquid until reaching the lowest point
-Example 1: If you drop a solid stone in the lake, it will sink to the bottom immediately.
-Example 2: We watched the broken wooden chest sink to the bottom of the sea.
-Watch out: Use "to" for the destination (sink TO the bottom), not "at" or "in".
-Synonyms: go under, descend completely
-
-FRONT:
-
-Does any clear solution ___ to ___ right now?
-
-What specific memory ___ to ___ when you smelled that perfume?
-
-Has a better idea ___ to ___ since our last team meeting?
-
-BACK: [type: chunk]
-spring to mind = to suddenly or quickly appear in your thoughts
-Example 1: When I think of great comedy movies, several classics immediately spring to mind.
-Example 2: I asked for suggestions, but absolutely nothing sprang to mind right away.
-Watch out: We say "spring TO mind", not "in mind" or "to my mind" for this exact expression.
-Synonyms: come to mind, occur to someone
-
-FRONT:
-
-Is it dangerous to ___ against the ___ in this fast-moving river?
-
-Who bravely ___ against the ___ to rescue the stranded boat?
-
-Have you ever ___ against a strong ocean ___ during a severe storm?
-
-BACK: [type: chunk]
-swim against the current = to move through water in the opposite direction to its natural flow
-Example 1: The rescue team had to swim against the current to reach the isolated survivors.
-Example 2: It requires an enormous amount of physical strength to swim against the current in the ocean.
-Watch out: Don't confuse "current" (the directional flow of water) with "currently" (an adverb meaning right now).
-Synonyms: swim upstream, battle the tide
+BACK: [type: verb+noun]
+**throw a party** = organize, host, and provide the space for a social gathering or celebration
+Example 1: My roommates decided to throw a party on Friday night to celebrate the end of exams.
+Example 2: If we manage to finish this project on time, I'm throwing a party!
+Watch out: Many learners translate directly from their native language and say "make a party" or "do a party", but these are incorrect in English. Always use "throw", "host", or "have".

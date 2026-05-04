@@ -67,14 +67,20 @@ def parse_cards(filepath):
     return cards
 
 
+def ensure_deck(deck_name):
+    anki_request("createDeck", deck=deck_name)
+
+
 def add_cards(cards, deck_name):
+    ensure_deck(deck_name)
+    tag = deck_name.lower().replace(" ", "_")
     notes = [
         {
             "deckName": deck_name,
             "modelName": MODEL_NAME,
             "fields": {"Front": front, "Back": back},
             "options": {"allowDuplicate": False},
-            "tags": [deck_name.lower().replace(" ", "_")],
+            "tags": [tag],
         }
         for front, back in cards
     ]
@@ -82,9 +88,25 @@ def add_cards(cards, deck_name):
     results = anki_request("addNotes", notes=notes)
 
     added = sum(1 for r in results if r is not None)
-    skipped = sum(1 for r in results if r is None)
-    print(f"  → {added} added, {skipped} skipped (duplicates)")
-    return added
+    updated = 0
+
+    # Для карточек, которые уже существуют (результат None), проверяем изменения
+    existing_cards = [(front, back) for (front, back), r in zip(cards, results) if r is None]
+    for front, back in existing_cards:
+        query = f'deck:"{deck_name}" Front:"{front}"'
+        note_ids = anki_request("findNotes", query=query)
+        if not note_ids:
+            continue
+        info = anki_request("notesInfo", notes=note_ids)
+        note = info[0]
+        current_back = note["fields"]["Back"]["value"]
+        if current_back != back:
+            anki_request("updateNoteFields", note={"id": note["noteId"], "fields": {"Back": back}})
+            updated += 1
+
+    skipped = len(existing_cards) - updated
+    print(f"  → {added} added, {updated} updated, {skipped} skipped (no changes)")
+    return added + updated
 
 
 def process_file(filepath):
