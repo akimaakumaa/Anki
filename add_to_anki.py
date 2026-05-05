@@ -132,8 +132,57 @@ def process_file(filepath):
     return add_cards(cards, deck_name)
 
 
+def configure_all_decks():
+    """Применяет одинаковые настройки ко всем колодам."""
+    DECK_SETTINGS = {
+        "new": {
+            "perDay": 10,
+            "delays": [1, 10, 1440],  # 1 мин → 10 мин → 1 день
+            "ints": [3, 7],            # graduating 3 дня, easy 7 дней
+            "initialFactor": 2500,
+            "order": 0,                # показывать новые карточки в случайном порядке
+            "bury": False,
+        },
+        "rev": {
+            "perDay": 200,
+            "ease4": 1.3,
+            "fuzz": 0.05,
+            "ivlFct": 1.0,
+            "maxIvl": 36500,
+            "bury": False,
+            "hardFactor": 1.2,
+        },
+        "lapse": {
+            "delays": [10],
+            "leechAction": 1,
+            "leechFails": 8,
+            "minInt": 1,
+            "mult": 0,
+        },
+    }
+
+    decks = anki_request("deckNames")
+    decks = [d for d in decks if d != "Default"]
+    print(f"Found {len(decks)} deck(s) to configure:")
+
+    for deck in decks:
+        config = anki_request("getDeckConfig", deck=deck)
+        config["new"].update(DECK_SETTINGS["new"])
+        config["rev"].update(DECK_SETTINGS["rev"])
+        config["lapse"].update(DECK_SETTINGS["lapse"])
+        anki_request("saveDeckConfig", config=config)
+        print(f"  ✓ {deck}")
+
+    print("\nDone! Settings applied to all decks.")
+
+
 if __name__ == "__main__":
     script_dir = os.path.dirname(os.path.abspath(__file__))
+
+    # Режим настройки колод
+    if len(sys.argv) > 1 and sys.argv[1] == "--configure":
+        configure_all_decks()
+        sys.exit(0)
 
     # Если передан конкретный файл — обработать только его
     if len(sys.argv) > 1:
