@@ -136,12 +136,14 @@ def configure_all_decks():
     """Применяет одинаковые настройки ко всем колодам."""
     DECK_SETTINGS = {
         "new": {
-            "perDay": 10,
-            "ints": [3, 7],  # graduating 3 дня, easy 7 дней
+            "perDay": 10,            # новых карточек в день
+            "delays": [1, 10, 1440], # шаги: 1м → 10м → 1 день (консолидация через сон)
+            "ints": [3, 7],          # graduating 3 дня, easy 7 дней
+            "order": 1,              # Sequential: oldest cards first (контекстный порядок)
             "bury": False,
         },
         "rev": {
-            "perDay": 200,
+            "perDay": 9999,          # без лимита — алгоритму виднее
             "ease4": 1.3,
             "fuzz": 0.05,
             "ivlFct": 1.0,
@@ -150,9 +152,9 @@ def configure_all_decks():
             "hardFactor": 1.2,
         },
         "lapse": {
-            "delays": [10],
-            "leechAction": 1,
-            "leechFails": 8,
+            "delays": [10],          # забыли — вернётся через 10 мин
+            "leechAction": 0,        # 0 = Suspend Card (заморозить пиявку)
+            "leechFails": 4,         # порог пиявки: 4 провала
             "minInt": 1,
             "mult": 0,
         },
