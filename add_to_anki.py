@@ -85,7 +85,15 @@ def add_cards(cards, deck_name):
         for front, back in cards
     ]
 
-    results = anki_request("addNotes", notes=notes)
+    try:
+        results = anki_request("addNotes", notes=notes)
+    except Exception as e:
+        # AnkiConnect иногда кидает строковую ошибку вместо списка null-ов
+        # когда все карточки — дубликаты. Трактуем как все существующие.
+        if "duplicate" in str(e).lower():
+            results = [None] * len(notes)
+        else:
+            raise
 
     added = sum(1 for r in results if r is not None)
     updated = 0
