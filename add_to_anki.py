@@ -137,10 +137,7 @@ def configure_all_decks():
     DECK_SETTINGS = {
         "new": {
             "perDay": 10,
-            "delays": [1, 10, 1440],  # 1 мин → 10 мин → 1 день
-            "ints": [3, 7],            # graduating 3 дня, easy 7 дней
-            "initialFactor": 2500,
-            "order": 0,                # показывать новые карточки в случайном порядке
+            "ints": [3, 7],  # graduating 3 дня, easy 7 дней
             "bury": False,
         },
         "rev": {
