@@ -121,11 +121,31 @@ def add_cards(cards, deck_name):
     return added + updated
 
 
-def process_file(filepath):
+CACHE_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".anki_cache.json")
+
+
+def load_cache():
+    if os.path.exists(CACHE_FILE):
+        with open(CACHE_FILE, encoding="utf-8") as f:
+            return json.load(f)
+    return {}
+
+
+def save_cache(cache):
+    with open(CACHE_FILE, "w", encoding="utf-8") as f:
+        json.dump(cache, f, indent=2)
+
+
+def process_file(filepath, cache):
     filename = os.path.basename(filepath)
     deck_name = os.path.splitext(filename)[0].replace("_", " ").title()
-    print(f"\n[{filename}] → deck: \"{deck_name}\"")
 
+    mtime = os.path.getmtime(filepath)
+    if cache.get(filepath) == mtime:
+        print(f"\n[{filename}] → skipped (no changes)")
+        return 0
+
+    print(f"\n[{filename}] → deck: \"{deck_name}\"")
     cards = parse_cards(filepath)
     print(f"  Found {len(cards)} cards")
 
@@ -133,7 +153,9 @@ def process_file(filepath):
         print("  No cards found. Check the file format.")
         return 0
 
-    return add_cards(cards, deck_name)
+    result = add_cards(cards, deck_name)
+    cache[filepath] = mtime
+    return result
 
 
 def configure_all_decks():
@@ -203,9 +225,11 @@ if __name__ == "__main__":
     for f in files:
         print(f"  - {os.path.basename(f)}")
 
+    cache = load_cache()
     total_added = 0
     for filepath in files:
-        total_added += process_file(filepath)
+        total_added += process_file(filepath, cache)
+    save_cache(cache)
 
     print(f"\n{'='*40}")
     print(f"Total added: {total_added} new cards")
