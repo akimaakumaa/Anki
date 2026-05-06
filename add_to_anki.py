@@ -98,19 +98,23 @@ def add_cards(cards, deck_name):
     added = sum(1 for r in results if r is not None)
     updated = 0
 
-    # Для карточек, которые уже существуют (результат None), проверяем изменения
     existing_cards = [(front, back) for (front, back), r in zip(cards, results) if r is None]
-    for front, back in existing_cards:
-        query = f'deck:"{deck_name}" Front:"{front}"'
-        note_ids = anki_request("findNotes", query=query)
-        if not note_ids:
-            continue
-        info = anki_request("notesInfo", notes=note_ids)
-        note = info[0]
-        current_back = note["fields"]["Back"]["value"]
-        if current_back != back:
-            anki_request("updateNoteFields", note={"id": note["noteId"], "fields": {"Back": back}})
-            updated += 1
+
+    if existing_cards:
+        # Один запрос на всю колоду вместо N запросов на каждую карточку
+        all_ids = anki_request("findNotes", query=f'deck:"{deck_name}"')
+        if all_ids:
+            all_info = anki_request("notesInfo", notes=all_ids)
+            lookup = {
+                note["fields"]["Front"]["value"]: (note["noteId"], note["fields"]["Back"]["value"])
+                for note in all_info
+            }
+            for front, back in existing_cards:
+                if front in lookup:
+                    note_id, current_back = lookup[front]
+                    if current_back != back:
+                        anki_request("updateNoteFields", note={"id": note_id, "fields": {"Back": back}})
+                        updated += 1
 
     skipped = len(existing_cards) - updated
     print(f"  → {added} added, {updated} updated, {skipped} skipped (no changes)")
