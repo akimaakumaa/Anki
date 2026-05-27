@@ -115,6 +115,12 @@ def add_cards(cards, deck_name):
                     if current_back != back:
                         anki_request("updateNoteFields", note={"id": note_id, "fields": {"Back": back}})
                         updated += 1
+                    else:
+                        # Показываем первые 60 символов фронта без HTML-тегов
+                        import re
+                        clean = re.sub(r'<[^>]+>', '', front).replace('<br>', ' ')
+                        preview = clean[:60] + ('…' if len(clean) > 60 else '')
+                        print(f"    skip: {preview}")
 
     skipped = len(existing_cards) - updated
     print(f"  → {added} added, {updated} updated, {skipped} skipped (no changes)")
