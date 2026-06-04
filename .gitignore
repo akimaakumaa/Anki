@@ -1,2 +1,4 @@
 cards.txt
 .anki_cache.json
+__pycache__/
+*.py[cod]

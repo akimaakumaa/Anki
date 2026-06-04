@@ -1,0 +1,167 @@
+FRONT:
+1. Can I <b>try</b> this ___ on in the fitting room?
+2. She wanted to <b>try</b> the jacket ___ on before buying it.
+3. Do you think these shoes will fit if I <b>try</b> them ___ on?
+
+BACK: type: verb phrase
+**try something on** = used when testing clothes or shoes for fit or style in a shop
+Example 1: I tried it on but the sleeves were too long.
+Example 2: He tried on three pairs of trousers before he found the right ones.
+Watch out: The object goes between "try" and "on" — never say "try on it".
+Similar phrase: put on, try out
+
+FRONT:
+1. I need to <b>put</b> my coat ___ on before we go outside.
+2. Can you <b>put</b> your shoes ___ on quickly so we can leave?
+3. She <b>put</b> her jacket ___ on and walked out the door.
+
+BACK: type: verb phrase
+**put something on** = used when getting dressed or adding an item of clothing
+Example 1: He put his hat on and went out into the rain.
+Example 2: Put your seatbelt on before the car starts moving.
+Watch out: For clothes it's "put on", not "put in" or "put at".
+Similar phrase: throw on, slip on
+
+FRONT:
+1. Can you <b>put</b> your toys ___ away before dinner?
+2. I always <b>put</b> my phone ___ away when I'm talking to friends.
+3. She told him to <b>put</b> the tools ___ away after he finished.
+
+BACK: type: verb phrase
+**put something away** = used when tidying up or storing something in its proper place
+Example 1: He put the books away on the shelf after reading.
+Example 2: Put your clothes away in the wardrobe, please.
+Watch out: The object goes between "put" and "away" — never "put away it".
+Similar phrase: tidy up, clear away
+
+FRONT:
+1. I need to <b>set</b> my ___ alarm for 7 a.m. tomorrow.
+2. Did you <b>set</b> the ___ alarm before you went to bed?
+3. Can you <b>set</b> an ___ alarm for me as well?
+
+BACK: type: verb phrase
+**set the alarm** = used when preparing to wake up at a specific time
+Example 1: She set the alarm for 6:30 because she had an early meeting.
+Example 2: I forgot to set the alarm and overslept.
+Watch out: It's "set the alarm", not "put the alarm" or "make the alarm".
+Similar phrase: set a reminder, set the timer
+
+FRONT:
+1. The loud noise completely <b>threw</b> me ___ off during the meeting.
+2. That weird question really <b>threw</b> me ___ off in the interview.
+3. The phone ringing <b>threw</b> me ___ off what I was saying.
+
+BACK: type: verb phrase
+**threw me off** = used when something unexpected distracts you or breaks your concentration
+Example 1: The sudden change in plans threw me off completely.
+Example 2: Sorry, the dog barking threw me off — what were you saying?
+Watch out: The object goes between "threw" and "off" (threw me off, not threw off me).
+Similar phrase: distracted me, put me off my stride
+
+FRONT:
+1. Can you <b>throw</b> this old magazine ___ away?
+2. I usually <b>throw</b> the packaging ___ away after opening something new.
+3. Don't <b>throw</b> it ___ away — I might need it later.
+
+BACK: type: verb phrase
+**throw something away** = used when getting rid of something you no longer need
+Example 1: He threw the broken phone away without thinking.
+Example 2: Throw the vegetable peels away in the compost bin.
+Watch out: The object goes between "throw" and "away" — never "throw away it".
+Similar phrase: toss out, get rid of
+
+FRONT:
+1. Problems often <b>arise</b> when people don't communicate clearly.
+2. Several issues <b>arose</b> during the project last week.
+3. What problems usually <b>arise</b> when you move to a new city?
+
+BACK: type: verb phrase
+**problems arise** = used when talking about difficulties or issues that appear
+Example 1: A problem arose when the system crashed suddenly.
+Example 2: If any problems arise, just let me know immediately.
+Watch out: "Arise" sounds more formal; in casual speech people often say "come up".
+Similar phrase: come up, occur
+
+FRONT:
+1. House prices have been <b>rising</b> a lot this year.
+2. The cost of living keeps <b>rising</b> every month.
+3. Why are food prices <b>rising</b> so fast right now?
+
+BACK: type: verb phrase
+**prices are rising** = used when talking about increasing costs in daily life
+Example 1: The price of petrol is rising again this month.
+Example 2: Salaries aren't rising as fast as inflation.
+Watch out: Use "rising" for gradual increases; "rose" for sudden past changes.
+Similar phrase: going up, increasing
+
+FRONT:
+1. Can you <b>swing</b> ___ by the shop and get some milk?
+2. I might <b>swing</b> ___ by your place later if I have time.
+3. Why don't you <b>swing</b> ___ by for a quick coffee on your way home?
+
+BACK: type: verb phrase
+**swing by** = used when planning or suggesting a quick informal visit
+Example 1: I'll swing by the post office on my way to work.
+Example 2: She swung by to pick up the package after lunch.
+Watch out: It's "swing by", never "swing to" or "swing at" for visiting.
+Similar phrase: drop by, pop in
+
+FRONT:
+1. <b>Stick</b> ___ around for a few minutes — I'll be right back.
+2. Why don't you <b>stick</b> ___ around and have dinner with us?
+3. He decided to <b>stick</b> ___ around and see what happens next.
+
+BACK: type: verb phrase
+**stick around** = used when asking or deciding to stay somewhere a little longer
+Example 1: Stick around after the meeting if you have questions.
+Example 2: I stuck around to help clean up after the party.
+Watch out: "Stick around" is informal; in formal situations use "stay".
+Similar phrase: hang around, stay put
+
+FRONT:
+1. Ouch, that comment really <b>stung</b> ___ when he said it.
+2. It <b>stung</b> ___ more than I expected when she ignored my idea.
+3. Her words really <b>stung</b> ___ even though she didn't mean it.
+
+BACK: type: spoken idiom
+**that really stung** = used when someone's words hurt your feelings emotionally
+Example 1: That rejection really stung, but I'm trying to move on.
+Example 2: It stung when my friend forgot my birthday.
+Watch out: Use this for emotional pain; for insect bites say "I got stung by a bee".
+Similar phrase: that hurt, that cut deep
+
+FRONT:
+1. I need to <b>convince</b> my boss ___ that this idea will work.
+2. She finally <b>convince</b> d me ___ that it was the right decision.
+3. How can I <b>convince</b> them ___ that I'm telling the truth?
+
+BACK: type: verb phrase
+**convince someone that** = used when trying to make someone believe or accept an idea
+Example 1: He convinced his parents that he was ready to live alone.
+Example 2: I couldn't convince her that the plan was completely safe.
+Watch out: Use "convince someone that" for beliefs; use "persuade someone to do" for actions.
+Similar phrase: persuade someone that, make someone see that
+
+FRONT:
+1. Can you <b>persuade</b> your brother ___ to help us move the furniture?
+2. I <b>persuade</b> d her ___ to come to the party with me.
+3. How did you <b>persuade</b> him ___ to lend you the car for the weekend?
+
+BACK: type: verb phrase
+**persuade someone to do something** = used when trying to get someone to take a specific action
+Example 1: She persuaded her parents to let her go on the trip alone.
+Example 2: He persuaded me to try the new restaurant downtown.
+Watch out: Don't overuse "convince someone to do"; "persuade" is better for encouraging action.
+Similar phrase: talk someone into doing, get someone to do
+
+FRONT:
+1. The bus drivers are <b>on</b> ___ strike again this week.
+2. The teachers went <b>on</b> ___ strike for better pay last month.
+3. Are the railway workers still <b>on</b> ___ strike or did they go back to work?
+
+BACK: type: noun chunk
+**on strike** = used when talking about workers stopping work to demand better conditions
+Example 1: The factory workers have been on strike for two weeks now.
+Example 2: They went on strike because their salaries hadn't increased for years.
+Watch out: Always use "on strike", never "in strike" or "at strike".
+Similar phrase: industrial action, walkout

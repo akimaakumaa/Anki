@@ -1,20 +1,33 @@
 import json
+import urllib.error
 import urllib.request
 import sys
 import os
 import glob
 
 ANKI_URL = "http://localhost:8765"
+ANKI_TIMEOUT_SECONDS = 5
 MODEL_NAME = "Basic"
 
 # Файлы, которые не являются колодами карточек
 SKIP_FILES = {"example_cards.txt"}
 
 
+class AnkiConnectUnavailable(Exception):
+    """Raised when AnkiConnect is not reachable on the local machine."""
+
+
 def anki_request(action, **params):
     payload = json.dumps({"action": action, "version": 6, "params": params}).encode()
     req = urllib.request.Request(ANKI_URL, payload)
-    response = json.load(urllib.request.urlopen(req))
+    try:
+        response = json.load(urllib.request.urlopen(req, timeout=ANKI_TIMEOUT_SECONDS))
+    except (urllib.error.URLError, TimeoutError) as e:
+        raise AnkiConnectUnavailable(
+            "Не удалось подключиться к AnkiConnect (http://localhost:8765). "
+            "Открой Anki, установи или включи add-on AnkiConnect (код 2055492159), "
+            "полностью перезапусти Anki и запусти скрипт снова."
+        ) from e
     error = response.get("error")
     if error:
         # AnkiConnect иногда возвращает список ошибок для addNotes (дубликаты)
@@ -212,7 +225,11 @@ if __name__ == "__main__":
 
     # Режим настройки колод
     if len(sys.argv) > 1 and sys.argv[1] == "--configure":
-        configure_all_decks()
+        try:
+            configure_all_decks()
+        except AnkiConnectUnavailable as e:
+            print(f"\nERROR: {e}")
+            sys.exit(1)
         sys.exit(0)
 
     # Если передан конкретный файл — обработать только его
@@ -234,7 +251,11 @@ if __name__ == "__main__":
     cache = load_cache()
     total_added = 0
     for filepath in files:
-        total_added += process_file(filepath, cache)
+        try:
+            total_added += process_file(filepath, cache)
+        except AnkiConnectUnavailable as e:
+            print(f"\nERROR: {e}")
+            sys.exit(1)
     save_cache(cache)
 
     print(f"\n{'='*40}")
